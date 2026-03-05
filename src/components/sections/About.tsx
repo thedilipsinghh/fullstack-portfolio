@@ -35,7 +35,7 @@ const About: React.FC = () => {
                             <h2 className="text-4xl font-bold mb-8">
                                 Beyond the <span className="text-accent-secondary">Interface</span>.
                             </h2>
-                            <div className="space-y-6 text-white/70 leading-relaxed">
+                            <div className="space-y-6 text-foreground/70 leading-relaxed">
                                 <p>
                                     I'm Dilip Singh, a Full-Stack MERN Developer passionate about crafting digital experiences
                                     that feel effortless. My journey in tech is driven by a fascination with complex systems
@@ -47,11 +47,11 @@ const About: React.FC = () => {
                                     using React-Native or a desktop powerhouse with Electron.js, I bridge the gap between
                                     design and high-end engineering.
                                 </p>
-                                <div className="flex items-center gap-4 text-white p-4 glass rounded-2xl border-l-4 border-l-accent-secondary">
+                                <div className="flex items-center gap-4 text-foreground p-4 glass rounded-2xl border-l-4 border-l-accent-secondary">
                                     <Globe className="text-accent-secondary" />
                                     <div>
                                         <div className="text-sm font-bold">Freelance Ready</div>
-                                        <div className="text-xs text-white/40">Available for worldwide remote collaboration</div>
+                                        <div className="text-xs text-foreground/40">Available for worldwide remote collaboration</div>
                                     </div>
                                 </div>
                             </div>
@@ -71,12 +71,12 @@ const About: React.FC = () => {
                                 whileHover={{ x: 10 }}
                                 className="p-6 glass rounded-2xl flex gap-6 items-start group transition-all"
                             >
-                                <div className="w-12 h-12 shrink-0 rounded-xl bg-white/[0.03] border border-white/10 flex items-center justify-center group-hover:border-accent-secondary/50 group-hover:bg-accent-secondary/10 transition-colors">
+                                <div className="w-12 h-12 shrink-0 rounded-xl bg-foreground/[0.03] border border-foreground/10 flex items-center justify-center group-hover:border-accent-secondary/50 group-hover:bg-accent-secondary/10 transition-colors">
                                     {item.icon}
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-bold mb-2 group-hover:text-accent-secondary transition-colors">{item.title}</h3>
-                                    <p className="text-sm text-white/50">{item.desc}</p>
+                                    <p className="text-sm text-foreground/50">{item.desc}</p>
                                 </div>
                             </motion.div>
                         ))}

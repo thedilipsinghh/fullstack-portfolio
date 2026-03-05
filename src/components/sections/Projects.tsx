@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
                     >
                         Featured <span className="text-accent-tertiary">Work</span>
                     </motion.h2>
-                    <p className="text-white/40 max-w-sm mx-auto">
+                    <p className="text-foreground/40 max-w-sm mx-auto">
                         Exploring the intersection of complex logic and intuitive design.
                     </p>
                 </div>
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                             whileHover={{ y: -10 }}
                             className="group relative flex flex-col items-center text-center"
                         >
-                            <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-white/10 glass">
+                            <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden mb-6 border border-foreground/10 glass">
                                 <img
                                     src={project.image}
                                     alt={project.title}
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10 opacity-60"></div>
 
                                 <div className="absolute top-4 right-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center">
+                                    <div className="w-10 h-10 rounded-full bg-foreground text-background flex items-center justify-center">
                                         <ArrowUpRight size={20} />
                                     </div>
                                 </div>
@@ -78,11 +78,11 @@ const Projects: React.FC = () => {
                             </div>
 
                             <h3 className="text-xl font-bold mb-3 group-hover:text-accent-tertiary transition-colors">{project.title}</h3>
-                            <p className="text-sm text-white/50 mb-6 line-clamp-2 max-w-xs">{project.description}</p>
+                            <p className="text-sm text-foreground/50 mb-6 line-clamp-2 max-w-xs">{project.description}</p>
 
                             <div className="flex flex-wrap justify-center gap-2">
                                 {project.tags.map(tag => (
-                                    <span key={tag} className="text-[10px] text-white/30 font-medium">#{tag}</span>
+                                    <span key={tag} className="text-[10px] text-foreground/30 font-medium">#{tag}</span>
                                 ))}
                             </div>
                         </motion.div>

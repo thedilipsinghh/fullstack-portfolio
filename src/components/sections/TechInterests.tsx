@@ -9,9 +9,9 @@ import {
 const TechInterests: React.FC = () => {
     const techStack = [
         { name: 'React', icon: <Atom size={20} className="text-[#61DAFB]" /> },
-        { name: 'Next.js', icon: <div className="font-bold text-white text-xs">N</div> },
+        { name: 'Next.js', icon: <div className="font-bold text-foreground text-xs">N</div> },
         { name: 'Node.js', icon: <Server size={20} className="text-[#339933]" /> },
-        { name: 'Express.js', icon: <Server size={20} className="text-white/40" /> },
+        { name: 'Express.js', icon: <Server size={20} className="text-foreground/40" /> },
         { name: 'TypeScript', icon: <div className="font-bold text-[#3178C6] text-xs">TS</div> },
         { name: 'Tailwind CSS', icon: <Wind size={20} className="text-[#06B6D4]" /> },
         { name: 'Material UI', icon: <Layers size={20} className="text-[#007FFF]" /> },
@@ -61,10 +61,10 @@ const TechInterests: React.FC = () => {
                                 transition={{ delay: idx * 0.05 }}
                                 className="glass p-6 rounded-2xl flex flex-col items-center justify-center gap-4 group cursor-default"
                             >
-                                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/[0.02] border border-white/5 group-hover:bg-white/[0.05] transition-colors">
+                                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-foreground/[0.02] border border-foreground/5 group-hover:bg-foreground/[0.05] transition-colors">
                                     {tech.icon}
                                 </div>
-                                <span className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">
+                                <span className="text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors">
                                     {tech.name}
                                 </span>
                             </motion.div>
@@ -86,7 +86,7 @@ const TechInterests: React.FC = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
-                            className="text-white/40 text-sm max-w-2xl mx-auto leading-relaxed"
+                            className="text-foreground/40 text-sm max-w-2xl mx-auto leading-relaxed"
                         >
                             When I'm not architecting systems or debugging code, you'll find me exploring these passions
                             that fuel my creativity and problem-solving skills.
@@ -103,10 +103,10 @@ const TechInterests: React.FC = () => {
                                 transition={{ delay: idx * 0.05 }}
                                 className="glass p-6 rounded-2xl flex flex-col items-center justify-center gap-4 group cursor-default"
                             >
-                                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/[0.02] border border-white/5 group-hover:bg-white/[0.05] transition-colors">
+                                <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-foreground/[0.02] border border-foreground/5 group-hover:bg-foreground/[0.05] transition-colors">
                                     {interest.icon}
                                 </div>
-                                <span className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">
+                                <span className="text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors">
                                     {interest.name}
                                 </span>
                             </motion.div>

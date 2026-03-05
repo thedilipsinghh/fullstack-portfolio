@@ -39,29 +39,29 @@ const Experience: React.FC = () => {
                             key={idx}
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            className="relative pl-8 border-l border-white/10"
+                            className="relative pl-8 border-l border-foreground/10"
                         >
                             <div className="absolute left-[-5px] top-0 w-[10px] h-[10px] rounded-full bg-accent-secondary shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
 
                             <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                                 <div>
-                                    <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                                    <h3 className="text-xl font-bold text-foreground">{exp.role}</h3>
                                     <div className="text-accent-secondary font-medium flex items-center gap-2">
                                         <Briefcase size={14} /> {exp.company}
                                     </div>
                                 </div>
-                                <div className="px-4 py-1.5 glass rounded-full text-xs font-bold text-white/60 flex items-center gap-2">
+                                <div className="px-4 py-1.5 glass rounded-full text-xs font-bold text-foreground/60 flex items-center gap-2">
                                     <Calendar size={14} /> {exp.period}
                                 </div>
                             </div>
 
-                            <p className="text-white/50 mb-6 leading-relaxed max-w-2xl">
+                            <p className="text-foreground/50 mb-6 leading-relaxed max-w-2xl">
                                 {exp.description}
                             </p>
 
                             <div className="flex flex-wrap gap-2">
                                 {exp.highlights.map(h => (
-                                    <span key={h} className="text-[10px] px-2 py-1 bg-white/[0.03] border border-white/10 rounded-md text-white/40">
+                                    <span key={h} className="text-[10px] px-2 py-1 bg-foreground/[0.03] border border-foreground/10 rounded-md text-foreground/40">
                                         {h}
                                     </span>
                                 ))}

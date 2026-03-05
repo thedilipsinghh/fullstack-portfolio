@@ -26,8 +26,8 @@ const Hero: React.FC = () => {
                         for the Future.
                     </h1>
 
-                    <p className="text-xl text-white/70 mb-8 max-w-lg leading-relaxed">
-                        Hi, I'm <span className="font-extrabold text-white">Dilip Singh</span>, a Full-Stack MERN Developer who builds real-world web applications using React, Node.js, Express, and MongoDB, focusing on clean code and performance.
+                    <p className="text-xl text-foreground/70 mb-8 max-w-lg leading-relaxed">
+                        Hi, I'm <span className="font-extrabold text-foreground">Dilip Singh</span>, a Full-Stack MERN Developer who builds real-world web applications using React, Node.js, Express, and MongoDB, focusing on clean code and performance.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
@@ -42,16 +42,16 @@ const Hero: React.FC = () => {
                         <a
                             href="/resume.pdf"
                             download="Dilip_Singh_Resume.pdf"
-                            className="px-8 py-4 border border-white/10 rounded-full font-bold transition-all hover:bg-white/5 flex items-center gap-2"
+                            className="px-8 py-4 border border-foreground/10 rounded-full font-bold transition-all hover:bg-foreground/5 flex items-center gap-2"
                         >
                             Download Resume
                             <div className="w-1.5 h-1.5 rounded-full bg-accent-primary animate-pulse" />
                         </a>
                         <motion.a
                             href="#contact"
-                            whileHover={{ scale: 1.05, backgroundColor: 'rgba(255,255,255,0.05)' }}
+                            whileHover={{ scale: 1.05, backgroundColor: 'rgba(var(--foreground-rgb), 0.05)' }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-8 py-4 border border-white/10 rounded-full font-bold transition-all"
+                            className="px-8 py-4 border border-foreground/10 rounded-full font-bold transition-all"
                         >
                             Let's Connect
                         </motion.a>
@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30"
             >
                 <span className="text-[10px] uppercase tracking-[0.2em]">Scroll</span>
-                <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+                <div className="w-[1px] h-12 bg-gradient-to-b from-foreground/50 to-transparent"></div>
             </motion.div>
         </section>
     );

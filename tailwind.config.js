@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,9 +8,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                background: '#030712', // Midnight Slate
-                foreground: '#ffffff', // Pure White
-                card: 'rgba(255, 255, 255, 0.03)', // Dark glass card
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
+                card: 'var(--card-bg)',
                 accent: {
                     primary: '#3b82f6', // Blue 500
                     secondary: '#8b5cf6', // Violet 500

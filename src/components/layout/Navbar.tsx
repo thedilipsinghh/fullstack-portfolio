@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Atom, Github, Instagram, Linkedin } from 'lucide-react';
+import ThemeToggle from '../ui/ThemeToggle';
 
 const Navbar: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -45,7 +46,7 @@ const Navbar: React.FC = () => {
                         <Atom size={28} className="text-accent-primary animate-[spin_8s_linear_infinite]" />
                     </div>
                     <div className="flex flex-col -space-y-1">
-                        <span className="text-2xl font-black tracking-tighter text-white">
+                        <span className="text-2xl font-black tracking-tighter text-foreground">
                             Dilip<span className="text-accent-primary">Singh</span>
                         </span>
                         <span className="text-[10px] uppercase tracking-[0.25em] font-black text-orange-500">
@@ -60,7 +61,7 @@ const Navbar: React.FC = () => {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="text-sm font-medium text-white/50 hover:text-white transition-colors"
+                                className="text-sm font-medium text-foreground/50 hover:text-foreground transition-colors"
                             >
                                 {item.name}
                             </a>
@@ -74,7 +75,7 @@ const Navbar: React.FC = () => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-white/40 hover:text-white transition-colors"
+                                className="text-foreground/40 hover:text-foreground transition-colors"
                             >
                                 {social.icon}
                             </a>
@@ -82,10 +83,11 @@ const Navbar: React.FC = () => {
                         <a
                             href="/resume.pdf"
                             download="Dilip_Singh_Resume.pdf"
-                            className="ml-2 px-4 py-2 bg-white/5 border border-white/10 hover:border-accent-primary/50 text-white rounded-xl text-xs font-bold transition-all"
+                            className="ml-2 px-4 py-2 bg-foreground/5 border border-foreground/10 hover:border-accent-primary/50 text-foreground rounded-xl text-xs font-bold transition-all"
                         >
                             Resume
                         </a>
+                        <ThemeToggle />
                     </div>
                 </div>
 

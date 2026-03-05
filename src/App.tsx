@@ -24,12 +24,12 @@ const App: React.FC = () => {
         <Contact />
       </main>
 
-      <footer className="py-12 border-t border-white/5 text-center text-white/30 text-xs backdrop-blur-sm">
+      <footer className="py-12 border-t border-foreground/5 text-center text-foreground/30 text-xs backdrop-blur-sm">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-white/40 text-sm">
+          <div className="text-foreground/40 text-sm">
             Built with React, TypeScript & Tailwind CSS
           </div>
-          <div className="flex gap-8 text-white/60 text-sm font-medium">
+          <div className="flex gap-8 text-foreground/60 text-sm font-medium">
             <a href="#" className="hover:text-accent-primary transition-colors">Home</a>
             <a href="#about" className="hover:text-accent-primary transition-colors">About</a>
             <a href="https://github.com/thedilipsinghh" target="_blank" className="hover:text-accent-primary transition-colors">GitHub</a>

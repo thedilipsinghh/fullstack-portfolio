@@ -3,13 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --background: #030712;
-  /* Midnight Slate */
-  --foreground: #ffffff;
-  /* Pure White */
+  --background: #ffffff;
+  --background-rgb: 255, 255, 255;
+  --foreground: #020617;
+  --foreground-rgb: 2, 6, 23;
   --accent-primary: #3b82f6;
   --accent-secondary: #8b5cf6;
   --accent-tertiary: #06b6d4;
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --background: #030712;
+  --background-rgb: 3, 7, 18;
+  --foreground: #ffffff;
+  --foreground-rgb: 255, 255, 255;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.1);
 }
 
 @layer base {
@@ -29,10 +40,10 @@
 
 @layer components {
   .glass {
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: var(--card-bg);
     backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
   }
 
   .glass-hover {
@@ -40,8 +51,8 @@
   }
 
   .glass-hover:hover {
-    background-color: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--card-bg);
+    border-color: var(--accent-primary);
   }
 
   .text-gradient {
@@ -62,12 +73,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border-color);
   border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--accent-primary);
 }
 
 /* Background Gradients */

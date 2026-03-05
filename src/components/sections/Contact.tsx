@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                                 <span className="text-gradient">Start Something</span> <br />
                                 Incredible?
                             </h2>
-                            <p className="text-white/50 text-lg mb-12">
+                            <p className="text-foreground/50 text-lg mb-12">
                                 I'm always open to discussing new projects, creative ideas or original opportunities.
                             </p>
 
@@ -36,11 +36,11 @@ const Contact: React.FC = () => {
                                         whileHover={{ x: 10 }}
                                         className="flex items-center gap-6 group"
                                     >
-                                        <div className="w-12 h-12 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-center group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
+                                        <div className="w-12 h-12 rounded-2xl bg-foreground/[0.03] border border-foreground/10 flex items-center justify-center group-hover:bg-accent-primary group-hover:text-white transition-all duration-300">
                                             {social.icon}
                                         </div>
                                         <div>
-                                            <div className="text-xs uppercase tracking-widest text-white/40 mb-1">{social.name}</div>
+                                            <div className="text-xs uppercase tracking-widest text-foreground/40 mb-1">{social.name}</div>
                                             <div className="text-sm font-bold group-hover:text-accent-primary transition-colors">{social.detail}</div>
                                         </div>
                                     </motion.a>
@@ -53,14 +53,14 @@ const Contact: React.FC = () => {
                                 <div className="p-8 glass rounded-3xl border-accent-primary/20">
                                     <CornerRightDown className="text-accent-primary mb-6" />
                                     <h3 className="text-xl font-bold mb-4">Quick Connect</h3>
-                                    <p className="text-sm text-white/40 mb-8 leading-relaxed">
+                                    <p className="text-sm text-foreground/40 mb-8 leading-relaxed">
                                         Based in India, working worldwide. Generally responsive within 24 hours.
                                     </p>
                                     <motion.a
                                         href="mailto:ds4718421@gmail.com"
                                         whileHover={{ scale: 1.02 }}
                                         whileTap={{ scale: 0.98 }}
-                                        className="w-full py-4 bg-white text-black rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-white/90 transition-all"
+                                        className="w-full py-4 bg-foreground text-background rounded-2xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-all"
                                     >
                                         Send Message <ArrowRight size={20} />
                                     </motion.a>
